@@ -290,7 +290,7 @@ class Inicio_averia extends React.Component {
          var elemento = document.getElementById("vrads");
        elemento.className += "input-group border border-danger  form-control col-lg-12";
         formIsValid = false;
-        errors["vrads"] = "*Ingrese dslams.";
+        errors["vrads"] = "*Ingrese vrads.";
        
      }
       else{
@@ -309,7 +309,7 @@ class Inicio_averia extends React.Component {
          var elemento = document.getElementById("efm");
        elemento.className += "input-group border border-danger  form-control col-lg-12";
         formIsValid = false;
-        errors["efm"] = "*Ingrese dslams.";
+        errors["efm"] = "*Ingrese efm.";
        
      }
       else{
@@ -327,7 +327,7 @@ class Inicio_averia extends React.Component {
          var elemento = document.getElementById("gpon");
        elemento.className += "input-group border border-danger  form-control col-lg-12";
         formIsValid = false;
-        errors["gpon"] = "*Ingrese dslams.";
+        errors["gpon"] = "*Ingrese gpon.";
        
      }
       else{
@@ -345,7 +345,7 @@ class Inicio_averia extends React.Component {
          var elemento = document.getElementById("cisco3800");
        elemento.className += "input-group border border-danger  form-control col-lg-12";
         formIsValid = false;
-        errors["cisco3800"] = "*Ingrese dslams.";
+        errors["cisco3800"] = "*Ingrese cisco3800.";
        
      }
       else{
@@ -363,7 +363,7 @@ class Inicio_averia extends React.Component {
          var elemento = document.getElementById("cisco24g");
        elemento.className += "input-group border border-danger  form-control col-lg-12";
         formIsValid = false;
-        errors["cisco24g"] = "*Ingrese dslams.";
+        errors["cisco24g"] = "*Ingrese cisco24g.";
        
      }
       else{
@@ -380,7 +380,7 @@ class Inicio_averia extends React.Component {
          var elemento = document.getElementById("clientes");
        elemento.className += "input-group border border-danger  form-control col-lg-12";
         formIsValid = false;
-        errors["clientes"] = "*Ingrese dslams.";
+        errors["clientes"] = "*Ingrese clientes.";
        
      }
       else{
@@ -397,7 +397,7 @@ class Inicio_averia extends React.Component {
          var elemento = document.getElementById("fecha");
        elemento.className += "input-group border border-danger  form-control col-lg-12";
         formIsValid = false;
-        errors["fecha"] = "*Ingrese dslams.";
+        errors["fecha"] = "*Ingrese fecha.";
        
      }
       else{
@@ -415,7 +415,7 @@ class Inicio_averia extends React.Component {
          var elemento = document.getElementById("causa");
        elemento.className += "input-group border border-danger  form-control col-lg-12";
         formIsValid = false;
-        errors["causa"] = "*Ingrese dslams.";
+        errors["causa"] = "*Ingrese causa.";
        
      }
       else{
@@ -433,7 +433,7 @@ class Inicio_averia extends React.Component {
          var elemento = document.getElementById("comentarios");
        elemento.className += "input-group border border-danger  form-control col-lg-12";
         formIsValid = false;
-        errors["comentarios"] = "*Ingrese dslams.";
+        errors["comentarios"] = "*Ingrese comentarios.";
        
      }
       else{
