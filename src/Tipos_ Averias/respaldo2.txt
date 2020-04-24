@@ -1,0 +1,98 @@
+import React, { Component } from "react";
+
+import "./actualizacion_averia"
+import axios from 'axios';
+
+
+
+
+
+class Up_date extends React.Component {  
+     
+   
+      
+      state = {
+
+        loading: true,
+        person:null,
+        descripcion:null,
+
+      };
+
+
+
+
+
+
+   async componentDidMount(){
+
+
+const url = "http://localhost:4000/buscar_averias/";
+const response = await fetch(url);
+const data = await response.json();
+
+this.setState({ person: data[0], loading: false });
+
+console.log(this.state.person.descripcion);
+
+
+
+    }
+  render() {
+
+
+  
+      
+    return ( 
+      <div>
+
+
+  <div className="p-3 mb-2 text-dark  border rounded border-secondary">
+                <p className="text-justify">
+                  AVISO DE CONFIDENCIALIDAD: Este correo electrónico, incluyendo
+                  en su caso los archivos adjuntos al mismo, puede contener
+                  información de carácter confidencial y/o privilegiado, y se
+                  envían a la atención única y exclusivamente de la persona y/o
+                  entidad a quien va dirigido. La copia, revisión, uso,
+                  revelación y/o distribución de dicha información confidencial
+                  sin la autorización por escrito de Claro está prohibida. Si
+                  usted no es el destinatario a quien se dirige el presente
+                  correo, favor de contactar al remitente respondiendo al
+                  presente correo y eliminar el correo original incluyendo sus
+                  archivos, así como cualquier copia del mismo. Mediante la
+                  recepción del presente correo usted reconoce y acepta que en
+                  caso de incumplimiento de su parte y/o de sus representantes a
+                  los términos antes mencionados, Claro tendrá derecho a los
+                  danos y perjuicios que esto le cause.{" "}
+                </p>
+              </div>
+          {this.state.loading || !this.state.person ?
+           (
+            <div>Loading.. </div>
+             )  : ( <div>
+                      <div>{this.state.person.descripcion}</div> 
+
+
+
+                       <input
+                    type="text"
+                 
+                    className="form-control"
+                    id="numero"
+                    placeholder=""
+                    name="numero"
+                  
+                    value={this.state.person.descripcion}
+                    
+                    />
+                    </div>
+    )}
+
+       
+    </div>
+    );
+  }
+}
+
+
+export default Up_date;
